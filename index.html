@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
 <meta name="theme-color" content="#11100e">
 <meta name="description" content="The Royal Table — luxury crockery rentals and catering in Mumbai.">
 <title>The Royal Table | Luxury Crockery & Catering</title>
+
 <style>
 :root {
   --black: #11100e;
@@ -61,7 +63,11 @@ h1 {
   margin: 20px 0;
 }
 h1 span { color: var(--gold); font-style: italic; }
-.lead { max-width: 650px; color: var(--muted); font: 17px/1.8 Arial, sans-serif; }
+.lead {
+  max-width: 650px;
+  color: var(--muted);
+  font: 17px/1.8 Arial, sans-serif;
+}
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
 .btn {
   display: inline-block;
@@ -101,6 +107,7 @@ textarea { min-height: 110px; }
 .full { grid-column: 1 / -1; }
 .note { color: var(--muted); font: 12px/1.6 Arial, sans-serif; }
 footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); font: 13px Arial, sans-serif; }
+
 @media (max-width: 700px) {
   .grid, form { grid-template-columns: 1fr; }
   .full { grid-column: auto; }
@@ -110,8 +117,8 @@ footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); fo
 }
 </style>
 </head>
-<body>
 
+<body>
 <header class="wrap">
   <nav>
     <div class="brand">The Royal Table</div>
@@ -176,7 +183,7 @@ footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); fo
       </div>
       <div class="grid">
         <article class="card">
-          <h3>Weddings & Receptions</h3>
+          <h3>Weddings &amp; Receptions</h3>
           <p>Menu discussions and buffet presentation for your special day.</p>
         </article>
         <article class="card">
@@ -212,7 +219,7 @@ footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); fo
       <div class="section-head">
         <div class="eyebrow">Begin your enquiry</div>
         <h2>Tell Us About Your Event</h2>
-        <p>Fill in the form to prepare an enquiry message. Online booking and payments are not enabled yet.</p>
+        <p>Complete the form to open WhatsApp with your enquiry. Online booking and payments are not enabled yet.</p>
       </div>
 
       <form id="enquiryForm">
@@ -256,8 +263,8 @@ footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); fo
           <textarea id="details" placeholder="Menu preferences, crockery needs, event timings..."></textarea>
         </label>
         <div class="full">
-          <button class="btn primary" type="submit">Prepare WhatsApp Enquiry</button>
-          <p class="note">The business WhatsApp number must be added in the code before this form can send enquiries.</p>
+          <button class="btn primary" type="submit">Send Enquiry on WhatsApp</button>
+          <p class="note">WhatsApp will open with your enquiry ready to review and send.</p>
         </div>
       </form>
     </div>
@@ -266,7 +273,7 @@ footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); fo
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> The Royal Table · Luxury Crockery Rentals & Catering · Mumbai
+    © <span id="year"></span> The Royal Table · Luxury Crockery Rentals &amp; Catering · Mumbai
   </div>
 </footer>
 
@@ -276,14 +283,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("enquiryForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
-  // Replace this with your business WhatsApp number, digits only.
-  // Example format: 919876543210
-  const businessWhatsApp = "";
-
-  if (!businessWhatsApp) {
-    alert("The website form is ready, but the business WhatsApp number has not been added yet.");
-    return;
-  }
+  // India country code + business WhatsApp number, digits only.
+  const businessWhatsApp = "919321769898";
 
   const value = id => document.getElementById(id).value.trim();
 
@@ -304,7 +305,6 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
     encodeURIComponent(message);
 });
 </script>
-
 </body>
 </html>
 
