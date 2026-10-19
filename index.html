@@ -1,1 +1,310 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11100e">
+<meta name="description" content="The Royal Table — luxury crockery rentals and catering in Mumbai.">
+<title>The Royal Table | Luxury Crockery & Catering</title>
+<style>
+:root {
+  --black: #11100e;
+  --gold: #c9a96e;
+  --cream: #f5efe4;
+  --muted: #c7bdae;
+  --panel: #1a1815;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+.wrap { width: 92%; max-width: 1120px; margin: auto; }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 0;
+  border-bottom: 1px solid #554936;
+}
+.brand {
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.navlinks { display: flex; gap: 16px; flex-wrap: wrap; }
+a { color: inherit; }
+.navlinks a { text-decoration: none; }
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 65px 0;
+  background: radial-gradient(ellipse at 80% 30%, #3b3020, transparent 50%);
+}
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font: 12px Arial, sans-serif;
+}
+h1 {
+  font-size: clamp(44px, 8vw, 88px);
+  line-height: 1.05;
+  font-weight: normal;
+  margin: 20px 0;
+}
+h1 span { color: var(--gold); font-style: italic; }
+.lead { max-width: 650px; color: var(--muted); font: 17px/1.8 Arial, sans-serif; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+.btn {
+  display: inline-block;
+  padding: 13px 19px;
+  border: 1px solid var(--gold);
+  color: var(--cream);
+  background: transparent;
+  text-decoration: none;
+  font: 14px Arial, sans-serif;
+  cursor: pointer;
+}
+.btn.primary { background: var(--gold); color: #17130d; }
+section { padding: 65px 0; }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 35px; }
+h2 { font-size: clamp(30px, 5vw, 50px); font-weight: normal; margin: 10px 0; }
+.section-head p, .card p { font: 15px/1.8 Arial, sans-serif; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card { background: var(--panel); border: 1px solid #554936; padding: 24px; }
+.card h3 { font-size: 23px; font-weight: normal; }
+.symbol { color: var(--gold); font-size: 32px; }
+.band { background: var(--cream); color: #1b1813; }
+.band .card { background: #fffaf1; border-color: #d7c6a7; }
+.band .card p, .band .section-head p { color: #62594d; }
+.tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.tag { border: 1px solid #554936; padding: 9px 12px; color: var(--muted); font: 14px Arial, sans-serif; }
+form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+label { display: grid; gap: 7px; color: var(--muted); font: 14px Arial, sans-serif; }
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  background: #15130f;
+  color: var(--cream);
+  border: 1px solid #554936;
+  font: 15px Arial, sans-serif;
+}
+textarea { min-height: 110px; }
+.full { grid-column: 1 / -1; }
+.note { color: var(--muted); font: 12px/1.6 Arial, sans-serif; }
+footer { padding: 25px 0; border-top: 1px solid #554936; color: var(--muted); font: 13px Arial, sans-serif; }
+@media (max-width: 700px) {
+  .grid, form { grid-template-columns: 1fr; }
+  .full { grid-column: auto; }
+  .hero { min-height: 60vh; }
+  section { padding: 48px 0; }
+  nav { align-items: flex-start; flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <nav>
+    <div class="brand">The Royal Table</div>
+    <div class="navlinks">
+      <a href="#rentals">Crockery</a>
+      <a href="#catering">Catering</a>
+      <a href="#enquiry">Enquire</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Mumbai · Events · Hospitality</div>
+      <h1>Make every<br>celebration <span>royal.</span></h1>
+      <p class="lead">
+        Elegant crockery rentals and thoughtful catering for weddings,
+        celebrations and corporate gatherings. Beautifully presented,
+        planned around your occasion.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#enquiry">Plan Your Event</a>
+        <a class="btn" href="#rentals">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="rentals">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Set the scene</div>
+        <h2>Crockery Rentals</h2>
+        <p>Give your tables a polished, coordinated look for intimate gatherings and grand celebrations.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="symbol">✧</div>
+          <h3>Classic Tableware</h3>
+          <p>Elegant plates, bowls, cups and coordinated place settings for your event.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">◇</div>
+          <h3>Statement Serving</h3>
+          <p>Serving bowls, platters and presentation pieces to complement your menu.</p>
+        </article>
+        <article class="card">
+          <div class="symbol">♢</div>
+          <h3>Event Packages</h3>
+          <p>Tell us your guest count and event style so we can discuss your rental needs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering" class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Thoughtfully prepared</div>
+        <h2>Catering for Every Occasion</h2>
+        <p>Start a conversation about your guests, menu and venue for your next event.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Weddings & Receptions</h3>
+          <p>Menu discussions and buffet presentation for your special day.</p>
+        </article>
+        <article class="card">
+          <h3>Private Celebrations</h3>
+          <p>Planning for birthdays, anniversaries and family gatherings.</p>
+        </article>
+        <article class="card">
+          <h3>Corporate Events</h3>
+          <p>Catering enquiries for meetings, launches and company occasions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The details matter</div>
+        <h2>A Considered Experience</h2>
+        <p>Share a few details so we can discuss options for your event.</p>
+      </div>
+      <div class="tags">
+        <span class="tag">Guest-count planning</span>
+        <span class="tag">Crockery rentals</span>
+        <span class="tag">Custom menu enquiries</span>
+        <span class="tag">Mumbai service area</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquiry">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Begin your enquiry</div>
+        <h2>Tell Us About Your Event</h2>
+        <p>Fill in the form to prepare an enquiry message. Online booking and payments are not enabled yet.</p>
+      </div>
+
+      <form id="enquiryForm">
+        <label>Your name
+          <input id="name" required placeholder="Full name">
+        </label>
+        <label>Phone / WhatsApp
+          <input id="phone" required type="tel" placeholder="+91">
+        </label>
+        <label>Event type
+          <select id="eventType">
+            <option>Wedding / Reception</option>
+            <option>Birthday / Private celebration</option>
+            <option>Corporate event</option>
+            <option>Other event</option>
+          </select>
+        </label>
+        <label>Event date
+          <input id="date" type="date">
+        </label>
+        <label>Approximate guest count
+          <select id="guests">
+            <option>Under 50</option>
+            <option>50–100</option>
+            <option>100–200</option>
+            <option>200–400</option>
+            <option>400+</option>
+          </select>
+        </label>
+        <label>Service needed
+          <select id="service">
+            <option>Crockery rental</option>
+            <option>Catering</option>
+            <option>Both crockery rental and catering</option>
+          </select>
+        </label>
+        <label class="full">Venue / area in Mumbai
+          <input id="venue" placeholder="Venue name or area">
+        </label>
+        <label class="full">More details
+          <textarea id="details" placeholder="Menu preferences, crockery needs, event timings..."></textarea>
+        </label>
+        <div class="full">
+          <button class="btn primary" type="submit">Prepare WhatsApp Enquiry</button>
+          <p class="note">The business WhatsApp number must be added in the code before this form can send enquiries.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> The Royal Table · Luxury Crockery Rentals & Catering · Mumbai
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Replace this with your business WhatsApp number, digits only.
+  // Example format: 919876543210
+  const businessWhatsApp = "";
+
+  if (!businessWhatsApp) {
+    alert("The website form is ready, but the business WhatsApp number has not been added yet.");
+    return;
+  }
+
+  const value = id => document.getElementById(id).value.trim();
+
+  const message = [
+    "Hello The Royal Table, I would like to enquire about an event.",
+    "Name: " + value("name"),
+    "Phone: " + value("phone"),
+    "Event: " + value("eventType"),
+    "Date: " + (value("date") || "Not decided"),
+    "Guests: " + value("guests"),
+    "Service: " + value("service"),
+    "Venue: " + (value("venue") || "Not specified"),
+    "Details: " + (value("details") || "None")
+  ].join("\n");
+
+  window.location.href =
+    "https://wa.me/" + businessWhatsApp + "?text=" +
+    encodeURIComponent(message);
+});
+</script>
+
+</body>
+</html>
+
