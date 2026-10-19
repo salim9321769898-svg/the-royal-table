@@ -1,12 +1,12 @@
-     
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#10100e">
-  <meta name="description" content="The Royal Table — premium crockery rentals and catering for weddings, parties, corporate events and celebrations across Mumbai.">
-  <title>The Royal Table | Luxury Crockery & Catering</title>
+  <meta name="description" content="The Royal Table — premium crockery rentals and catering across Mumbai.">
+  <title>The Royal Table | Luxury Crockery & Catering>
+
   <style>
     :root {
       --black: #10100e;
@@ -16,8 +16,10 @@
       --muted: #c5bdae;
       --line: rgba(213,180,119,.3);
     }
+
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       background: var(--black);
@@ -25,107 +27,371 @@
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.7;
     }
+
     a { color: inherit; text-decoration: none; }
-    button, input, select, textarea { font: inherit; }
     .wrap { width: min(1120px, 90%); margin: auto; }
+
     header {
-      position: sticky; top: 0; z-index: 10;
-      background: rgba(16,16,14,.96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(16,16,14,.97);
       border-bottom: 1px solid var(--line);
     }
+
     .nav {
-      min-height: 76px; display: flex; align-items: center;
-      justify-content: space-between; gap: 20px;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 12px 0;
     }
-    .brand { color: var(--gold); font-size: 23px; letter-spacing: 2px; }
+
+    .brand {
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
     .brand small {
-      display: block; font: 10px Arial, sans-serif;
-      letter-spacing: 4px; text-align: center; color: var(--cream);
+      display: block;
+      color: var(--cream);
+      font: 10px Arial, sans-serif;
+      letter-spacing: 3px;
+      text-align: center;
     }
-    .links { display: flex; gap: 23px; align-items: center; font: 13px Arial, sans-serif; }
+
+    .links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      font: 13px Arial, sans-serif;
+    }
+
     .links a:hover { color: var(--gold); }
+
     .button {
-      display: inline-block; padding: 13px 21px;
-      background: var(--gold); color: #17140e;
-      border: 1px solid var(--gold); cursor: pointer;
-      font: 12px Arial, sans-serif; font-weight: bold;
-      letter-spacing: 1px; text-transform: uppercase;
+      display: inline-block;
+      padding: 12px 19px;
+      background: var(--gold);
+      color: #17140e;
+      border: 1px solid var(--gold);
+      cursor: pointer;
+      font: bold 12px Arial, sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
-    .button.outline { background: transparent; color: var(--gold); }
+
+    .button.outline {
+      background: transparent;
+      color: var(--gold);
+    }
+
     .hero {
-      min-height: 590px; display: grid; place-items: center;
-      text-align: center; padding: 90px 0;
+      min-height: 560px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 85px 0;
       background:
-        linear-gradient(90deg, rgba(16,16,14,.96), rgba(16,16,14,.68), rgba(16,16,14,.94)),
-        radial-gradient(ellipse at 50% 45%, #5b492b 0%, #29251c 35%, #10100e 75%);
+        linear-gradient(rgba(16,16,14,.78), rgba(16,16,14,.92)),
+        url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
       border-bottom: 1px solid var(--line);
     }
+
     .eyebrow {
-      color: var(--gold); font: 11px Arial, sans-serif;
-      letter-spacing: 4px; text-transform: uppercase;
+      color: var(--gold);
+      font: 11px Arial, sans-serif;
+      letter-spacing: 4px;
+      text-transform: uppercase;
     }
-    h1 { font-size: clamp(42px, 8vw, 76px); line-height: 1.08; font-weight: normal; margin: 20px 0; }
-    h1 span, h2 span { color: var(--gold); font-style: italic; }
-    .hero p { max-width: 640px; margin: 0 auto 30px; color: var(--muted); font-size: 18px; }
-    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    section { padding: 82px 0; }
-    .intro { text-align: center; max-width: 720px; margin: 0 auto 42px; }
-    h2 { font-size: clamp(31px, 5vw, 45px); line-height: 1.2; font-weight: normal; margin: 12px 0 18px; }
-    .intro p, .card p, .about p { color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.1;
+      font-weight: normal;
+      margin: 20px 0;
+    }
+
+    h1 span, h2 span {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    section {
+      padding: 75px 0;
+      scroll-margin-top: 110px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 40px;
+    }
+
+    h2 {
+      font-size: clamp(31px, 5vw, 45px);
+      line-height: 1.2;
+      font-weight: normal;
+      margin: 12px 0 18px;
+    }
+
+    .intro p, .card p, .about p {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
     .card {
-      background: var(--panel); border: 1px solid var(--line);
-      padding: 28px; transition: transform .2s, border-color .2s;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      padding: 27px;
+      transition: transform .2s, border-color .2s;
     }
-    .card:hover { transform: translateY(-4px); border-color: var(--gold); }
-    .symbol { font-size: 34px; color: var(--gold); }
-    h3 { font-size: 23px; font-weight: normal; margin: 12px 0; }
-    .card a { color: var(--gold); font: 12px Arial, sans-serif; letter-spacing: 1px; text-transform: uppercase; }
-    .about { background: #171713; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: center; }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .symbol {
+      color: var(--gold);
+      font-size: 34px;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: normal;
+      margin: 12px 0;
+    }
+
+    .card a {
+      color: var(--gold);
+      font: 12px Arial, sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .about {
+      background: #171713;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
     .features { list-style: none; padding: 0; }
-    .features li { padding: 10px 0; border-bottom: 1px solid var(--line); }
-    .features li::before { content: "✦"; color: var(--gold); margin-right: 12px; }
-    .enquiry { max-width: 760px; margin: auto; }
-    form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    label { display: block; font: 12px Arial, sans-serif; color: var(--gold); margin-bottom: 7px; }
-    input, select, textarea {
-      width: 100%; padding: 13px; background: #191915;
-      color: var(--cream); border: 1px solid var(--line); border-radius: 0;
+
+    .features li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
     }
-    textarea { min-height: 115px; resize: vertical; }
+
+    .features li::before {
+      content: "✦";
+      color: var(--gold);
+      margin-right: 12px;
+    }
+
+    /* PHOTO GALLERY */
+
+    .gallery-section {
+      background: #141410;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-card {
+      margin: 0;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    .gallery-card img {
+      display: block;
+      width: 100%;
+      height: 245px;
+      object-fit: cover;
+      transition: transform .3s;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-card figcaption {
+      padding: 13px 16px;
+      color: var(--gold);
+      font-size: 16px;
+    }
+
+    /* VIDEO SECTION */
+
+    .video-section {
+      background: #171713;
+    }
+
+    .video-frame {
+      max-width: 900px;
+      margin: auto;
+      aspect-ratio: 16 / 9;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+
+    .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .video-note {
+      color: var(--muted);
+      text-align: center;
+      font: 12px Arial, sans-serif;
+    }
+
+    /* ENQUIRY FORM */
+
+    .enquiry {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      display: block;
+      color: var(--gold);
+      font: 12px Arial, sans-serif;
+      margin-bottom: 7px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      background: var(--panel);
+      color: var(--cream);
+      border: 1px solid var(--line);
+    }
+
+    textarea {
+      min-height: 115px;
+      resize: vertical;
+    }
+
     .full { grid-column: 1 / -1; }
     form .button { width: 100%; }
-    .note { font: 12px Arial, sans-serif; color: var(--muted); }
-    footer { padding: 34px 0; border-top: 1px solid var(--line); text-align: center; }
-    footer p { color: var(--muted); font: 12px Arial, sans-serif; }
-    .footer-brand { color: var(--gold); font-size: 22px; letter-spacing: 2px; }
+
+    .note {
+      color: var(--muted);
+      font: 12px Arial, sans-serif;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--muted);
+      font: 12px Arial, sans-serif;
+    }
+
+    .footer-brand {
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
     .whatsapp {
-      position: fixed; right: 18px; bottom: 18px; z-index: 20;
-      background: #218b58; color: white; border-radius: 30px;
-      padding: 12px 18px; font: bold 13px Arial, sans-serif;
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 20;
+      background: #218b58;
+      color: white;
+      border-radius: 30px;
+      padding: 12px 18px;
+      font: bold 13px Arial, sans-serif;
       box-shadow: 0 4px 20px #0008;
     }
+
     @media (max-width: 760px) {
-      .nav { padding: 12px 0; flex-wrap: wrap; }
-      .links { width: 100%; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+      .links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
       .links a { font-size: 12px; }
       .links .button { padding: 9px 12px; }
-      .hero { min-height: 500px; }
-      section { padding: 60px 0; }
-      .grid, .about-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 480px; }
+      section { padding: 55px 0; }
+
+      .grid, .about-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
       form { grid-template-columns: 1fr; }
       .full { grid-column: auto; }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="wrap nav">
-      <a class="brand" href="#home">THE ROYAL TABLE<small>CRAFTED FOR CELEBRATIONS</small></a>
+      <a class="brand" href="#home">
+        THE ROYAL TABLE
+        <small>CRAFTED FOR CELEBRATIONS</small>
+      </a>
+
       <nav class="links" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">Our Approach</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
         <a href="#enquiry">Enquire</a>
         <a class="button" href="#enquiry">Plan Your Event</a>
       </nav>
@@ -137,7 +403,10 @@
       <div class="wrap">
         <div class="eyebrow">A touch of timeless elegance</div>
         <h1>Make Every Table<br><span>Remarkable.</span></h1>
-        <p>Premium crockery rentals and thoughtful catering for weddings, celebrations, intimate gatherings and corporate events in Mumbai.</p>
+        <p>
+          Premium crockery rentals and thoughtful catering for weddings,
+          celebrations, intimate gatherings and corporate events in Mumbai.
+        </p>
         <div class="actions">
           <a class="button" href="#services">Explore Our Services</a>
           <a class="button outline" href="#enquiry">Request a Quote</a>
@@ -150,24 +419,30 @@
         <div class="intro">
           <div class="eyebrow">The Royal Experience</div>
           <h2>Every Detail, <span>Beautifully Served.</span></h2>
-          <p>From the first place setting to the final course, we help bring your event vision together with care, style and attention to detail.</p>
+          <p>
+            From the first place setting to the final course, we help bring
+            your event vision together with care, style and attention to detail.
+          </p>
         </div>
+
         <div class="grid">
           <article class="card">
-            <div class="symbol" aria-hidden="true">♜</div>
+            <div class="symbol">♜</div>
             <h3>Luxury Crockery Rental</h3>
             <p>Elegant tableware and serving essentials for celebrations, parties, weddings and special occasions.</p>
             <a href="#enquiry">Enquire about rentals →</a>
           </article>
+
           <article class="card">
-            <div class="symbol" aria-hidden="true">✧</div>
+            <div class="symbol">✧</div>
             <h3>Catering Services</h3>
             <p>Food and service planning tailored to your gathering, guest count, menu preferences and event style.</p>
             <a href="#enquiry">Discuss catering →</a>
           </article>
+
           <article class="card">
-            <div class="symbol" aria-hidden="true">◇</div>
-            <h3>Events & Celebrations</h3>
+            <div class="symbol">◇</div>
+            <h3>Events &amp; Celebrations</h3>
             <p>Thoughtful arrangements for weddings, birthdays, family functions, festive occasions and business events.</p>
             <a href="#enquiry">Plan your occasion →</a>
           </article>
@@ -180,10 +455,17 @@
         <div>
           <div class="eyebrow">The Royal Difference</div>
           <h2>Hospitality with <span>Heart.</span></h2>
-          <p>Every occasion deserves a table that feels special. We work with you to understand your requirements and help you plan the right service for your event.</p>
-          <p>Share your date, location, guest count and ideas. We’ll discuss the available options and prepare a personalised quotation.</p>
+          <p>
+            Every occasion deserves a table that feels special. We work with
+            you to understand your requirements and help you plan the right service.
+          </p>
+          <p>
+            Share your date, location, guest count and ideas. We’ll discuss
+            the available options and prepare a personalised quotation.
+          </p>
           <a class="button" href="#enquiry">Start Planning</a>
         </div>
+
         <div>
           <ul class="features">
             <li>Options tailored to your event</li>
@@ -196,52 +478,131 @@
       </div>
     </section>
 
+    <section class="gallery-section" id="gallery">
+      <div class="wrap">
+        <div class="intro">
+          <div class="eyebrow">A glimpse of elegance</div>
+          <h2>Our <span>Gallery.</span></h2>
+          <p>
+            Sample inspiration for elegant table settings, celebrations and
+            food presentation. Replace these images with your own event photos later.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Elegant event table setting" loading="lazy">
+            <figcaption>Elegant Event Settings</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Wedding reception inspiration" loading="lazy">
+            <figcaption>Wedding Celebrations</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Fine dining food presentation" loading="lazy">
+            <figcaption>Beautiful Food Presentation</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Celebration table inspiration" loading="lazy">
+            <figcaption>Special Occasions</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Wedding table and event styling" loading="lazy">
+            <figcaption>Thoughtful Table Styling</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Catered food arranged for guests" loading="lazy">
+            <figcaption>Catering Inspiration</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section" id="video">
+      <div class="wrap">
+        <div class="intro">
+          <div class="eyebrow">See the atmosphere</div>
+          <h2>Event <span>Inspiration.</span></h2>
+          <p>
+            A sample embedded video. You can replace it with a video of your
+            own catering or event work when you have one.
+          </p>
+        </div>
+
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+            title="Event inspiration video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <p class="video-note">Sample video. Playback depends on YouTube availability and your internet connection.</p>
+      </div>
+    </section>
+
     <section id="enquiry">
       <div class="wrap">
         <div class="intro">
           <div class="eyebrow">Let's create something memorable</div>
           <h2>Plan Your <span>Perfect Event.</span></h2>
-          <p>Tell us a little about your requirements. Your enquiry will open in WhatsApp so you can review and send it to us.</p>
+          <p>Fill in your requirements. WhatsApp will open so you can review and send your enquiry.</p>
         </div>
+
         <div class="enquiry">
           <form id="enquiryForm">
             <div>
               <label for="name">YOUR NAME *</label>
               <input id="name" name="name" autocomplete="name" required placeholder="Enter your name">
             </div>
+
             <div>
               <label for="phone">YOUR PHONE *</label>
               <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="Your contact number">
             </div>
+
             <div>
               <label for="service">SERVICE REQUIRED *</label>
               <select id="service" name="service" required>
                 <option value="">Choose a service</option>
                 <option>Luxury Crockery Rental</option>
                 <option>Catering Services</option>
-                <option>Crockery & Catering</option>
+                <option>Crockery &amp; Catering</option>
                 <option>Event Enquiry</option>
               </select>
             </div>
+
             <div>
               <label for="date">EVENT DATE</label>
               <input id="date" name="date" type="date">
             </div>
+
             <div>
               <label for="guests">NUMBER OF GUESTS</label>
               <input id="guests" name="guests" type="number" min="1" placeholder="Estimated guest count">
             </div>
+
             <div>
               <label for="location">EVENT LOCATION</label>
               <input id="location" name="location" placeholder="Area or city">
             </div>
+
             <div class="full">
               <label for="details">TELL US ABOUT YOUR EVENT</label>
-              <textarea id="details" name="details" placeholder="Menu ideas, crockery requirements, budget or any special requests"></textarea>
+              <textarea id="details" name="details" placeholder="Menu ideas, crockery requirements, budget or special requests"></textarea>
             </div>
+
             <div class="full">
               <button class="button" type="submit">Send Enquiry on WhatsApp</button>
-              <p class="note">Your message is prepared for WhatsApp. It is only sent when you review and send it there.</p>
+              <p class="note">Your message is sent only after you review and send it in WhatsApp.</p>
             </div>
           </form>
         </div>
@@ -258,13 +619,18 @@
     </div>
   </footer>
 
-  <a class="whatsapp" href="https://wa.me/919321769898" target="_blank" rel="noopener noreferrer" aria-label="Chat with The Royal Table on WhatsApp">WhatsApp ↗</a>
+  <a class="whatsapp"
+     href="https://wa.me/919321769898"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with The Royal Table on WhatsApp">WhatsApp ↗</a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
     document.getElementById("enquiryForm").addEventListener("submit", function (event) {
       event.preventDefault();
+
       const form = new FormData(this);
       const fields = [
         ["Name", "name"],
@@ -275,15 +641,25 @@
         ["Location", "location"],
         ["Event details", "details"]
       ];
-      const message = ["Hello The Royal Table! I would like to enquire about your services.", ""];
+
+      const message = [
+        "Hello The Royal Table! I would like to enquire about your services.",
+        ""
+      ];
+
       fields.forEach(function (field) {
         const value = String(form.get(field[1]) || "").trim();
-        if (value) message.push(field[0] + ": " + value);
+        if (value) {
+          message.push(field[0] + ": " + value);
+        }
       });
-      const url = "https://wa.me/919321769898?text=" + encodeURIComponent(message.join("\n"));
-      window.open(url, "_blank", "noopener,noreferrer");
+
+      const url =
+        "https://wa.me/919321769898?text=" +
+        encodeURIComponent(message.join("\n"));
+
+      window.open(url, "_blank");
     });
   </script>
 </body>
 </html>
-   
