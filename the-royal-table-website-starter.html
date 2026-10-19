@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11100e">
+<meta name="description" content="The Royal Table — luxury crockery rentals and catering for weddings, celebrations and corporate events across Mumbai.">
+<title>The Royal Table | Luxury Crockery Rentals & Catering</title>
+<style>
+:root{--black:#11100e;--panel:#1a1815;--gold:#c9a96e;--cream:#f5efe4;--muted:#c7bdae;--line:rgba(201,169,110,.35)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{font-size:1.12rem;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.navlinks{display:flex;gap:20px;flex-wrap:wrap;font: .9rem Arial,sans-serif}
+.navlinks a{text-decoration:none;color:var(--cream)}
+.hero{min-height:72vh;display:grid;align-items:center;padding:70px 0;background:radial-gradient(ellipse at 75% 35%,#3b3020 0,transparent 38%),linear-gradient(120deg,#11100e,#201b14 65%,#11100e)}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font: .78rem Arial,sans-serif}
+h1{font-size:clamp(2.7rem,8vw,5.8rem);line-height:1.03;font-weight:400;margin:18px 0}
+h1 span{color:var(--gold);font-style:italic}
+.lead{max-width:650px;color:var(--muted);font:1.05rem/1.8 Arial,sans-serif}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:13px 19px;border:1px solid var(--gold);color:var(--cream);font: .9rem Arial,sans-serif}
+.btn.primary{background:var(--gold);color:#17130d;font-weight:bold}
+section{padding:68px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 34px}
+h2{font-size:clamp(2rem,5vw,3.3rem);font-weight:400;margin:8px 0 12px}
+.section-head p,.card p{font-family:Arial,sans-serif;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);padding:24px}
+.card .symbol{font-size:2rem;color:var(--gold)}
+.card h3{font-weight:400;font-size:1.45rem;margin:12px 0 8px}
+.band{background:var(--cream);color:#1b1813}
+.band .section-head p,.band .card p{color:#62594d}
+.band .card{background:#fffaf1;border-color:#d7c6a7}
+.band .card h3{color:#211b13}
+.tags{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.tag{border:1px solid var(--line);padding:8px 12px;color:var(--muted);font: .86rem Arial,sans-serif}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;text-align:left}
+label{font: .86rem Arial,sans-serif;color:var(--muted);display:grid;gap:7px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #554936;background:#15130f;color:var(--cream);font:1rem Arial,sans-serif;border-radius:0}
+textarea{min-height:110px;resize:vertical}
+.full{grid-column:1/-1}
+button{cursor:pointer}
+.note{font: .8rem/1.6 Arial,sans-serif;color:var(--muted)}
+footer{padding:28px 0;border-top:1px solid var(--line);font: .85rem Arial,sans-serif;color:var(--muted)}
+.footrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.navlinks{gap:10px;font-size:.8rem}.hero{min-height:60vh;padding:54px 0}section{padding:52px 0}form{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav>
+    <div class="brand">The Royal Table</div>
+    <div class="navlinks"><a href="#rentals">Crockery</a><a href="#catering">Catering</a><a href="#enquiry">Enquire</a></div>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Mumbai · Events · Hospitality</div>
+      <h1>Make every<br>celebration <span>royal.</span></h1>
+      <p class="lead">Elegant crockery rentals and thoughtful catering for weddings, celebrations and corporate gatherings. Beautifully presented, planned around your occasion.</p>
+      <div class="actions">
+        <a class="btn primary" href="#enquiry">Plan Your Event</a>
+        <a class="btn" href="#rentals">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+  <section id="rentals">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Set the scene</div><h2>Crockery Rentals</h2><p>Give your tables a polished, coordinated look with rental crockery for intimate gatherings and grand celebrations.</p></div>
+      <div class="grid">
+        <article class="card"><div class="symbol">✧</div><h3>Classic Tableware</h3><p>Elegant plates, bowls, cups and coordinated place settings for your event.</p></article>
+        <article class="card"><div class="symbol">◇</div><h3>Statement Serving</h3><p>Serving bowls, platters and presentation pieces to complement your menu.</p></article>
+        <article class="card"><div class="symbol">♢</div><h3>Event Packages</h3><p>Tell us your guest count and event style; we'll help you plan the right rental mix.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="catering" class="band">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Thoughtfully prepared</div><h2>Catering for every occasion</h2><p>From family celebrations to wedding functions and corporate events, start with a conversation about your guests, menu and venue.</p></div>
+      <div class="grid">
+        <article class="card"><h3>Weddings & Receptions</h3><p>Custom menu discussions and buffet presentation for your special day.</p></article>
+        <article class="card"><h3>Private Celebrations</h3><p>Food and service planning for birthdays, anniversaries and family gatherings.</p></article>
+        <article class="card"><h3>Corporate Events</h3><p>Practical catering enquiries for meetings, launches and company occasions.</p></article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">The details matter</div><h2>A considered experience</h2><p>Share a few details and we can discuss a package that fits your event.</p></div>
+      <div class="tags"><span class="tag">Guest-count planning</span><span class="tag">Crockery rental enquiries</span><span class="tag">Custom menus</span><span class="tag">Mumbai service area</span></div>
+    </div>
+  </section>
+  <section id="enquiry">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Begin your enquiry</div><h2>Tell us about your event</h2><p>Complete this form to prepare an enquiry message. Online booking and payment are not enabled in this starter version.</p></div>
+      <form id="enquiryForm">
+        <label>Your name<input id="name" required placeholder="Full name"></label>
+        <label>Phone / WhatsApp number<input id="phone" required type="tel" placeholder="+91"></label>
+        <label>Event type<select id="eventType"><option>Wedding / Reception</option><option>Birthday / Private celebration</option><option>Corporate event</option><option>Other event</option></select></label>
+        <label>Event date<input id="date" type="date"></label>
+        <label>Approximate guest count<select id="guests"><option>Under 50</option><option>50–100</option><option>100–200</option><option>200–400</option><option>400+</option></select></label>
+        <label>Service needed<select id="service"><option>Crockery rental</option><option>Catering</option><option>Both crockery rental and catering</option></select></label>
+        <label class="full">Venue / area in Mumbai<input id="venue" placeholder="Venue name or area"></label>
+        <label class="full">Tell us more<textarea id="details" placeholder="Menu preferences, crockery requirements, event timings…"></textarea></label>
+        <div class="full"><button class="btn primary" type="submit">Prepare WhatsApp Enquiry</button><p class="note">Before publishing, replace the demo WhatsApp number in the website code with your business number. The form will not send anything until that is configured.</p></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footrow"><span>© <span id="year"></span> The Royal Table</span><span>Luxury Crockery Rentals & Catering · Mumbai</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const businessWhatsApp = ''; // Add your WhatsApp number with country code, digits only, e.g. 919876543210
+  if (!businessWhatsApp) {
+    alert('The enquiry form is ready, but the business WhatsApp number has not been configured yet. Add your number before publishing.');
+    return;
+  }
+  const val = id => document.getElementById(id).value.trim();
+  const message = `Hello The Royal Table, I would like to enquire about an event.%0AName: ${encodeURIComponent(val('name'))}%0APhone: ${encodeURIComponent(val('phone'))}%0AEvent: ${encodeURIComponent(val('eventType'))}%0ADate: ${encodeURIComponent(val('date') || 'Not decided')}%0AGuests: ${encodeURIComponent(val('guests'))}%0AService: ${encodeURIComponent(val('service'))}%0AVenue: ${encodeURIComponent(val('venue') || 'Not specified')}%0ADetails: ${encodeURIComponent(val('details') || 'None')}`;
+  window.location.href = `https://wa.me/${businessWhatsApp}?text=${message}`;
+});
+</script>
+</body>
+</html>
